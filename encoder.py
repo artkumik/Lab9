@@ -1,5 +1,5 @@
 def main():
-    encode(12345555)
+    print(encode(12345555))
 
 def encode(user):
     user = str(user)
@@ -10,7 +10,7 @@ def encode(user):
     for i in user:
         encoded_user = encoded_user + str(encoding_list[int(i)])
 
-    print(encoded_user)
+    return encoded_user
 
 if __name__ == "__main__":
     main()
